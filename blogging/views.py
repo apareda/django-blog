@@ -7,11 +7,9 @@ from django.views.generic.detail import DetailView
 
 
 class BlogListView(ListView):
-    model = Post
     queryset = Post.objects.exclude(published_date=None).order_by('published_date')
     template_name = 'blogging/list.html'
 
 class BlogDetailView(DetailView):
-    model = Post
     queryset = Post.objects.exclude(published_date=None)
     template_name = 'blogging/detail.html'
