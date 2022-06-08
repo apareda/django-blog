@@ -2,6 +2,24 @@
 
 {% block content %}
 <h1>My Blog Login</h1>
+<p>Please sign in with one
+  of your existing third party accounts. Or, <a href="/accounts/signup/">sign up</a>
+  for a example.com account and sign in below:</p>
+<div class="socialaccount_ballot">
+
+  <ul class="socialaccount_providers">
+
+<li>
+  <a title="GitHub" class="socialaccount_provider github" 
+     href="/accounts/github/login/?process=login">GitHub</a>
+</li>
+
+
+  </ul>
+
+  <div class="login-or">or</div>
+
+</div>
 <form action="" method="POST">{% csrf_token %}
   {{ form.as_p }}
   <p><input type="submit" value="Log In"></p>
