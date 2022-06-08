@@ -135,6 +135,7 @@ SITE_ID = 1
 
 ACCOUNT_EMAIL_VERIFICATION = "none"
 
+
 STATIC_URL = "/static/"
 LOGIN_URL = "/login/"
 LOGIN_REDIRECT_URL = "/"
